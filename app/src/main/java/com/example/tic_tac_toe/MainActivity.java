@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
         status.setVisibility(status.INVISIBLE);
         if(gameState[tappedImage]==2 && gameActive)
         {
-            gameState[tappedImage]=activePlayer;
+            //gameState[tappedImage]=activePlayer;
             img.setTranslationY(-1000f);
 
             if(activePlayer==0)
@@ -74,6 +74,7 @@ public class MainActivity extends AppCompatActivity {
                 Xstatus.setVisibility(Xstatus.INVISIBLE);
                 img.setImageResource(R.drawable.cross);
                 Xstatus.setText("Player X's turn");
+                gameState[tappedImage]=0;
                 activePlayer=1;
             }
             else
@@ -84,11 +85,12 @@ public class MainActivity extends AppCompatActivity {
                 img.setImageResource(R.drawable.dot);
                 Ystatus=findViewById(R.id.Ystatus);
                 Ystatus.setText("Player Y's turn");
+                gameState[tappedImage]=1;
                 activePlayer=0;
             }
 
+            img.animate().translationYBy(1000f).setDuration(300);
         }
-        img.animate().translationYBy(1000f).setDuration(300);
 
         //winning case
         String winner = null;
