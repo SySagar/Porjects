@@ -13,8 +13,7 @@ public class MainActivity extends AppCompatActivity {
     int[] gameState={2,2,2,2,2,2,2,2,2,2};
     int[][] win={{1,2,3},{4,5,6},{7,8,9},{1,4,7},{2,5,8},{3,6,9},{1,5,9},{3,5,7}};
     boolean gameActive=true;
-    TextView Xstatus=findViewById(R.id.Xstatus);
-    TextView Ystatus=findViewById(R.id.Ystatus);
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,8 +40,11 @@ public class MainActivity extends AppCompatActivity {
         ((ImageView)findViewById(R.id.imageView8)).setImageResource(0);
         ((ImageView)findViewById(R.id.imageView9)).setImageResource(0);
 
-        //Ystatus.setVisibility(Ystatus.INVISIBLE);
-       // Xstatus.setVisibility(Xstatus.INVISIBLE);
+
+        TextView Xstatus=findViewById(R.id.Xstatus);
+        TextView Ystatus=findViewById(R.id.Ystatus);
+        Ystatus.setVisibility(Ystatus.INVISIBLE);
+        Xstatus.setVisibility(Xstatus.INVISIBLE);
 
     }
 
@@ -54,7 +56,8 @@ public class MainActivity extends AppCompatActivity {
         if(!gameActive)
         {reset(view);}
 
-
+        TextView Xstatus=findViewById(R.id.Xstatus);
+        TextView Ystatus=findViewById(R.id.Ystatus);
         TextView status=findViewById(R.id.status);
         status.setVisibility(status.INVISIBLE);
         if(gameState[tappedImage]==2 && gameActive)
