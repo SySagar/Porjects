@@ -108,6 +108,8 @@ public class MainActivity extends AppCompatActivity {
 
         }
 
+        Xstatus.setVisibility(Xstatus.INVISIBLE);
+        Ystatus.setVisibility(Ystatus.INVISIBLE);
         status.setVisibility(status.VISIBLE);
         status.setText(winner);
 
