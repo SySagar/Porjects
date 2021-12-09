@@ -39,6 +39,8 @@ public class MainActivity extends AppCompatActivity {
         ((ImageView)findViewById(R.id.imageView8)).setImageResource(0);
         ((ImageView)findViewById(R.id.imageView9)).setImageResource(0);
 
+
+
     }
 
     public void playerTap(View view)
