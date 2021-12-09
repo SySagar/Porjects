@@ -41,13 +41,13 @@ public class MainActivity extends AppCompatActivity {
         ((ImageView)findViewById(R.id.imageView9)).setImageResource(0);
 
 
-<<<<<<< HEAD
-=======
+
+
         TextView Xstatus=findViewById(R.id.Xstatus);
         TextView Ystatus=findViewById(R.id.Ystatus);
         Ystatus.setVisibility(Ystatus.INVISIBLE);
         Xstatus.setVisibility(Xstatus.INVISIBLE);
->>>>>>> test
+
 
     }
 
