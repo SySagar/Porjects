@@ -177,7 +177,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:fontFamily="@font/sura_bold"
-        android:text="Player X's turn"
+        android:text="Player Y's turn"
         android:textColor="@color/design_default_color_primary_dark"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"

@@ -99,6 +99,7 @@ public class MainActivity extends AppCompatActivity {
             if(gameState[winpostion[0]]==gameState[winpostion[1]] && gameState[winpostion[1]]==gameState[winpostion[2]]
             && gameState[winpostion[0]]!=2)
             {
+                Ystatus.setVisibility(Ystatus.INVISIBLE);
                 gameActive=false;
                 if(gameState[winpostion[0]]==0)
                 {winner="X is the winner"; }
@@ -108,8 +109,20 @@ public class MainActivity extends AppCompatActivity {
 
         }
 
-        Xstatus.setVisibility(Xstatus.INVISIBLE);
-        Ystatus.setVisibility(Ystatus.INVISIBLE);
+        int tieCount=0;
+        for(int i=0;i<gameState.length;i++)
+        {
+            if(gameState[i]==1 || gameState[i]==0)
+                tieCount++;
+        }
+        if(tieCount==9)
+        {winner="         Tie!";
+            gameActive=false;
+            Ystatus.setVisibility(Ystatus.INVISIBLE);}
+
+
+
+        //
         status.setVisibility(status.VISIBLE);
         status.setText(winner);
 
