@@ -104,6 +104,12 @@ public class MainActivity extends AppCompatActivity {
             }
 
         }
+        int tie_counter=0;
+        for(int i=0;i<gameState.length;i++)
+        {if(gameState[i]==1 || gameState[i]==0)
+        tie_counter++;}
+        if(tie_counter==9)
+            winner="     Tie Game!";
 
         status.setVisibility(status.VISIBLE);
         status.setText(winner);
