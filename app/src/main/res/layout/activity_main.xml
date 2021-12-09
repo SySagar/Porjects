@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    android:background="@drawable/white_background"
     <TextView
         android:id="@+id/textView"
         android:layout_width="166dp"
@@ -22,8 +23,8 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="0sp"
-        android:layout_height="513sp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:adjustViewBounds="true"
         android:contentDescription="@string/grid"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -45,7 +46,7 @@
         app:layout_constraintHorizontal_bias="0.686"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.300">
+        app:layout_constraintVertical_bias="0.500">
 
         <LinearLayout
             android:layout_width="match_parent"
