@@ -111,6 +111,8 @@ public class MainActivity extends AppCompatActivity {
         if(tie_counter==9)
             winner="     Tie Game!";
 
+        Xstatus.setVisibility(Xstatus.INVISIBLE);
+        Ystatus.setVisibility(Ystatus.INVISIBLE);
         status.setVisibility(status.VISIBLE);
         status.setText(winner);
 
