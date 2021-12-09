@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
     int[][] win={{1,2,3},{4,5,6},{7,8,9},{1,4,7},{2,5,8},{3,6,9},{1,5,9},{3,5,7}};
     boolean gameActive=true;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,6 +41,13 @@ public class MainActivity extends AppCompatActivity {
         ((ImageView)findViewById(R.id.imageView9)).setImageResource(0);
 
 
+<<<<<<< HEAD
+=======
+        TextView Xstatus=findViewById(R.id.Xstatus);
+        TextView Ystatus=findViewById(R.id.Ystatus);
+        Ystatus.setVisibility(Ystatus.INVISIBLE);
+        Xstatus.setVisibility(Xstatus.INVISIBLE);
+>>>>>>> test
 
     }
 
